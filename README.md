@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-=======
-# Country-Insights-Engine
-<div align="center">
 
-# 🌍 Country Intelligence Agent
+# 🌍 Country-Insights-Engine
 
 **A production-grade AI agent that answers natural-language questions about countries**
 
