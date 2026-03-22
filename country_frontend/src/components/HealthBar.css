@@ -1,0 +1,70 @@
+.health-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--cream-muted);
+  padding: 6px 16px;
+  background: var(--bg-2);
+  border-bottom: 1px solid var(--border);
+  letter-spacing: 0.03em;
+}
+
+.health-bar__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--cream-muted);
+  flex-shrink: 0;
+  position: relative;
+}
+
+.health-bar--ok .health-bar__dot {
+  background: var(--jade);
+}
+
+.health-bar--ok .health-bar__dot::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 50%;
+  background: var(--jade);
+  opacity: 0.4;
+  animation: pulse-ring 2s ease-out infinite;
+}
+
+.health-bar--err .health-bar__dot {
+  background: var(--red);
+}
+
+.health-bar__label {
+  color: var(--cream-dim);
+  font-weight: 500;
+}
+
+.health-bar--ok .health-bar__label { color: var(--jade); }
+.health-bar--err .health-bar__label { color: var(--red); }
+
+.health-bar__sep { color: var(--border-2); }
+
+.health-bar__db--ok  { color: var(--jade); }
+.health-bar__db--err { color: var(--red); }
+
+.health-bar__version,
+.health-bar__env {
+  color: var(--cream-muted);
+}
+
+.health-bar__refresh {
+  background: none;
+  border: none;
+  color: var(--cream-muted);
+  cursor: pointer;
+  font-size: 13px;
+  padding: 0 4px;
+  margin-left: auto;
+  transition: color var(--transition), transform var(--transition);
+  line-height: 1;
+}
+.health-bar__refresh:hover { color: var(--jade); transform: rotate(180deg); }
