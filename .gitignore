@@ -1,0 +1,62 @@
+# 🔹 Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 🔹 Virtual Environment
+venv/
+.env/
+.venv/
+
+# 🔹 Environment variables (CRITICAL)
+.env
+.env.*
+*.env
+
+# 🔹 Logs
+*.log
+
+# 🔹 Database
+*.db
+*.sqlite3
+
+# 🔹 Alembic
+alembic/versions/__pycache__/
+*.pyc
+
+# 🔹 Test & Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+.cache/
+
+# 🔹 Type checking
+.mypy_cache/
+.pyre/
+
+# 🔹 Jupyter Notebook
+.ipynb_checkpoints/
+
+# 🔹 IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 🔹 OS files
+.DS_Store
+Thumbs.db
+
+# 🔹 Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# 🔹 Node (if frontend later)
+node_modules/
+
+# 🔹 Misc
+*.bak
+*.tmp
